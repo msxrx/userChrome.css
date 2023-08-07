@@ -1,0 +1,17 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* 
+  full screen toolbars
+  credit: cor-el https://support.mozilla.org/en-US/questions/1039009#answer-671198
+*/
+#navigator-toolbox[inFullscreen] toolbar:not([collapsed="true"]) {
+  visibility:visible!important;
+}
+
+/* 
+  hide bookmark icons
+  credit: cor-el https://support.mozilla.org/en-US/questions/991090#answer-547064
+*/
+#personal-bookmarks .bookmark-item > .toolbarbutton-icon {
+  display:none!important
+}
